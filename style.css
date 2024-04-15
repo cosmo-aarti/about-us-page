@@ -1,0 +1,82 @@
+
+ .main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.image {
+    flex: 1;
+    margin-right: 20px; 
+height: 1000px;
+width: 600px;
+margin-left: 20px;
+margin-top: 20px;
+flex-direction: column;}
+
+
+.content {
+    flex: 1;
+    
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+}
+.jumbotron{
+    display: inline;
+    height: 400px;
+    width:auto;
+    color: blue;
+    background-color:white;
+    margin:20px;
+}
+.vision{
+    background-color: black;
+    height: 300px;
+    width: 200px;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    disply:flex;
+}
+.mission{
+    background-color: red;height: 100px;
+    width: 200px;
+    display: inline;
+    height: 300;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.values{
+    background-color: blue;height: 100px;
+    width: 200px;
+    display: inline;
+    height: 400;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+body{
+    background-image: url("/background.png");
+    background-size: cover;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image, .content {
+        flex: none;
+        width: 50%;
+        margin-right: 0;
+    }
+}
+
